@@ -1,10 +1,10 @@
-package com.ei.school.backend.component
+package com.ei.vaadin.backend.component
 
-import com.ei.school.backend.enums.StatusEnum
-import com.ei.school.backend.model.Company
-import com.ei.school.backend.model.Contact
-import com.ei.school.backend.service.CompanyService
-import com.ei.school.backend.service.ContactService
+import com.ei.vaadin.backend.enums.StatusEnum
+import com.ei.vaadin.backend.model.Company
+import com.ei.vaadin.backend.model.Contact
+import com.ei.vaadin.backend.service.CompanyService
+import com.ei.vaadin.backend.service.ContactService
 import org.springframework.boot.ApplicationArguments
 import org.springframework.boot.ApplicationRunner
 import org.springframework.stereotype.Component

@@ -1,7 +1,7 @@
-package com.ei.school.backend.service
+package com.ei.vaadin.backend.service
 
-import com.ei.school.backend.model.Company
-import com.ei.school.backend.repository.CompanyRepository
+import com.ei.vaadin.backend.model.Company
+import com.ei.vaadin.backend.repository.CompanyRepository
 import org.springframework.stereotype.Service
 
 @Service

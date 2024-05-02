@@ -1,6 +1,6 @@
-package com.ei.school.backend.model
+package com.ei.vaadin.backend.model
 
-import com.ei.school.backend.enums.StatusEnum
+import com.ei.vaadin.backend.enums.StatusEnum
 import jakarta.persistence.Column
 import jakarta.persistence.Entity
 import jakarta.persistence.EnumType
@@ -20,4 +20,5 @@ data class Contact(
     @NotNull @Enumerated(EnumType.STRING) var status: StatusEnum,
     @ManyToOne @JoinColumn(name = "company_id") var company: Company
 ): ModelCommon(){
+    constructor() : this("","","", StatusEnum.NONE,  Company())
 }

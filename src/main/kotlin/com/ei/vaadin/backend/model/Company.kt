@@ -1,4 +1,4 @@
-package com.ei.school.backend.model
+package com.ei.vaadin.backend.model
 
 import jakarta.persistence.Column
 import jakarta.persistence.Entity
@@ -13,6 +13,6 @@ class Company(
     @NotNull @Column(unique = true) var name: String,
     @OneToMany(mappedBy = "company", fetch = FetchType.LAZY) var contacts: MutableList<Contact> = mutableListOf()
 ): ModelCommon() {
-
     constructor(name: String): this(name, mutableListOf())
+    constructor(): this("")
 }

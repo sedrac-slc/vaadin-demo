@@ -1,11 +1,11 @@
-package com.ei.school
+package com.ei.vaadin
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class SchoolApplication
+class VaadinDemoApplication
 
 fun main(args: Array<String>) {
-	runApplication<SchoolApplication>(*args)
+	runApplication<VaadinDemoApplication>(*args)
 }

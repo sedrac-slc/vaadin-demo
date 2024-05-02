@@ -1,7 +1,7 @@
-package com.ei.school.backend.service
+package com.ei.vaadin.backend.service
 
-import com.ei.school.backend.model.Contact
-import com.ei.school.backend.repository.ContactRepository
+import com.ei.vaadin.backend.model.Contact
+import com.ei.vaadin.backend.repository.ContactRepository
 import org.springframework.stereotype.Service
 
 @Service
@@ -20,6 +20,10 @@ class ContactService (
     fun saveOrUpdate(contact: Contact): Contact {
         contactRepository.findByEmail(contact.email).ifPresent { contact.id = it.id }
         return save(contact)
+    }
+
+    fun delete(contact: Contact) {
+        contactRepository.delete(contact)
     }
 
 }

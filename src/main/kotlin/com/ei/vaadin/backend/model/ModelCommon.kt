@@ -1,4 +1,4 @@
-package com.ei.school.backend.model
+package com.ei.vaadin.backend.model
 
 import jakarta.persistence.Id
 import jakarta.persistence.MappedSuperclass

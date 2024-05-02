@@ -1,6 +1,6 @@
-package com.ei.school.backend.repository
+package com.ei.vaadin.backend.repository
 
-import com.ei.school.backend.model.Company
+import com.ei.vaadin.backend.model.Company
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.stereotype.Repository
 import java.util.Optional
